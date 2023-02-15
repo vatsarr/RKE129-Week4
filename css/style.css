@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0 border-box;
+}
+
+body {
+  background-color: #e1eedd;
+  font-family: Poppins, sans-serif;
+}
+
+.container {
+  width: 55%;
+  margin: 32px auto;
+}
+
+.header {
+  height: 250px;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 4.5rem;
+  color: #f0a04b;
+  animation: header;
+  animation-duration: 3s;
+  position: relative;
+  animation-fill-mode: forwards;
+}
+
+@keyframes header {
+  0% {
+    top: -300px;
+  }
+
+  100% {
+    top: 100px;
+  }
+}
+
+.main {
+  color: #183a1d;
+  line-height: 2rem;
+}
+
+.text-right {
+  text-align: right;
+  animation: textRight;
+  animation-duration: 3s;
+  position: relative;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes textRight {
+  0% {
+    right: -1000px;
+  }
+
+  55% {
+    right: 50px;
+  }
+
+  100% {
+    right: 0;
+  }
+}
+
+.text-left {
+  animation: textLeft;
+  animation-duration: 3s;
+  position: relative;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes textLeft {
+  0% {
+    left: -1000px;
+  }
+  55% {
+    left: 50px;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+.footer {
+  text-align: center;
+}
+
+.btn {
+  opacity: 0;
+  border: 2px solid #183a1d;
+  display: inline-block;
+  margin: 3rem auto;
+  padding: 1rem;
+  text-decoration: none;
+  color: #183a1d;
+  font-size: 2rem;
+  text-transform: uppercase;
+  animation: aniBtn;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-delay: 3s;
+}
+
+@keyframes aniBtn {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.homeTask {
+  border: 1px solid white;
+  margin: 20px auto;
+  width: 600px;
+  height: 602px;
+}
+
+.homeTask div {
+  height: 200px;
+  width: 200px;
+  margin: 0 auto;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+#red {
+  background-color: red;
+}
+
+#yellow {
+  background-color: yellow;
+}
+
+#green {
+  background-color: green;
+}
