@@ -122,6 +122,7 @@ body {
 .homeTask {
   border: 1px solid white;
   margin: 20px auto;
+  padding: 1rem;
   width: 600px;
   height: 602px;
 }
@@ -136,12 +137,54 @@ body {
 
 #red {
   background-color: red;
+  position: relative;
+  animation: red;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+@keyframes red {
+  0% {
+    top: -200px;
+  }
+  100% {
+    top: 0;
+  }
 }
 
 #yellow {
   background-color: yellow;
+  position: relative;
+  animation: yellow;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+@keyframes yellow {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 #green {
   background-color: green;
+  position: relative;
+  animation: green;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+@keyframes green {
+  0% {
+    transform: rotateY(360deg);
+  }
+  100% {
+    top: 0;
+  }
 }
