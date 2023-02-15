@@ -91,6 +91,7 @@ body {
 .btn {
   opacity: 0;
   border: 2px solid #183a1d;
+  border-radius: 5rem;
   display: inline-block;
   margin: 3rem auto;
   padding: 1rem;
@@ -183,8 +184,5 @@ body {
 @keyframes green {
   0% {
     transform: rotateY(360deg);
-  }
-  100% {
-    top: 0;
   }
 }
